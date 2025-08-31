@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/estilos.css">
 
-    <title>Mini Portfolio</title>
+  <title>Mini Portfolio</title>
 </head>
 <body>
-    <main class="cartao">
-        <div class="minhas-informacoes">
-            <img src="./src/imagens/foto-perfil.jpg" alt="Profile photo">
-            <h1 class="nome">Juliana Gimenes Müller</h1>
-            <h2 class="cargo">Junior FullStack Developer</h2>
+  <main class="cartao">
+      
+    <div class="minhas-informacoes">
+      <img src="./src/imagens/foto-perfil.jpg" alt="Profile photo">
+      <h1 class="nome">Juliana Gimenes Müller</h1>
+      <h2 class="cargo">Junior FullStack Developer</h2>
+    </div>
+
+    <div class="conteudo">
+      <ul class="abas">
+        <li class="aba selecionado" id="sobre-mim">
+          <img src="./src/imagens/sobre.gif" alt="About me icon">
+        </li>
+        <li class="aba" id="minhas-redes">
+          <img src="./src/imagens/coracao.gif" alt="Social media icon">
+        </li>                
+      </ul>
+      <div class="informacoes-abas">
+        <div class="informacao selecionado" id="informacao-sobre-mim">
+          <h3 class="sub-titulo">About</h3>
+
+          <div class="descricao">
+            <p>Hello! My name is Juliana Gimenes Müller, thank you for visiting my portfolio!</p>
+            
+            <p>
+              I am passionate about programming and technology, with a strong academic background in interconnected areas such as 
+              <strong>system development and analysis, data science, computational chemistry and machine learning</strong>. 
+              I am currently pursuing a degree in <strong>Systems Analysis and Development at PUC Minas</strong>, where I am expanding 
+              my technical skills and gaining in-depth knowledge of programming and technological solutions.
+            </p>
+
+            <p>
+              My focus is on <strong>FullStack development</strong> using 
+              <span>HTML, CSS, JavaScript (Node.js), Java and C#</span>, and 
+              <strong>Data Science</strong> with 
+              <span>Python, SQL, Pandas, NumPy, Matplotlib and Scikit-learn</span>.  
+              Through my projects, I create interactive, dynamic user interfaces, build predictive models, analyze data to uncover patterns, and develop insightful visualizations.
+            </p>
+          </div>
         </div>
 
-        <div class="conteudo">
-            <ul class="abas">
-                <li class="aba selecionado" id="sobre-mim">
-                    <img src="./src/imagens/sobre.gif" alt="About me icon">
-                </li>
-                <li class="aba" id="minhas-redes">
-                    <img src="./src/imagens/coracao.gif" alt="Social media icon">
-                </li>                
-            </ul>
+        <!-- Aba Redes -->
+        <div class="informacao" id="informacao-minhas-redes">
+          <h3 class="sub-titulo">My Networks</h3>
 
-            <div class="informacoes-abas">
-                <div class="informacao selecionado" id="informacao-sobre-mim">
-                    <h3 class="sub-titulo">About</h3>
-
-                    <div class="descricao">
-                        <p>Hello! My name is Juliana Gimenes Müller, thank you for visiting my portfolio!</p>
-                        
-                        <p>
-                            I am passionate about programming and technology, with a strong academic background in interconnected areas such as system development and analysis, data science, computational chemistry and machine learning. 
-                            I am currently pursuing a degree in Systems Analysis and Development at PUC Minas, where I am expanding my technical skills and gaining in-depth knowledge of programming and technological solutions.
-                            I am focusing on FullStack development using <span>HTML, CSS, JavaScript (Node.js), Java and C#</span> and Data Science using <span>Python, SQL, Pandas, NumPy, Matplotlib and Scikit-learn</span> in my projects, which allows me to create interactive, dynamic user interfaces and/or 
-                            build predictive models, analyze data to uncover patterns, develop data visualizations.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="informacao" id="informacao-minhas-redes">
-                    <h3 class="sub-titulo">My Networks</h3>
-
-                    <ul class="redes-sociais">
-                        <li>
-                            <a href="https://www.canva.com/design/DAGszKfzDxs/E4n1XGnEID7BD_c2sGKN6A/edit?utm_content=DAGszKfzDxs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="curriculo">Resume</a>
-                        </li>
-                        <li>
-                            <a href="linkedin.com/in/julianagmüller" target="_blank" class="linkedin">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/julenmuller" target="_blank" class="github">GitHub</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
+          <ul class="redes-sociais">
+            <li>
+              <a href="https://www.canva.com/design/DAGszKfzDxs/E4n1XGnEID7BD_c2sGKN6A/edit?utm_content=DAGszKfzDxs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                 target="_blank" 
+                 class="curriculo">Resume</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/seu-usuario-linkedin" 
+                 target="_blank" 
+                 class="linkedin">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://github.com/julenmuller" 
+                 target="_blank" 
+                 class="github">GitHub</a>
+            </li>
+          </ul>
         </div>
-    </main>
+      </div>
+    </div>
+  </main>
 
-    <script src="./src/js/index.js"></script>
+  <script src="./src/js/index.js"></script>
 </body>
 </html>
+
